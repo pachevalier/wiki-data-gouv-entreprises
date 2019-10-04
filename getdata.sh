@@ -1,0 +1,4 @@
+#!/bin/bash
+
+curl -G https://query.wikidata.org/bigdata/namespace/wdq/sparql --data-urlencode query="$(< query_entreprises.sparql)" -H 'Accept: text/csv' > entreprises.csv
+curl -G https://query.wikidata.org/bigdata/namespace/wdq/sparql --data-urlencode query="$(< query_etablissements.sparql)" -H 'Accept: text/csv' > etablissements.csv
