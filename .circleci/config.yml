@@ -13,7 +13,7 @@ jobs:
 
 workflows:
     version: 2
-    daily:
+    weekly:
         jobs:
             - update-and-publish
         triggers:
